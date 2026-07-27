@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Velorah® — Where dreams rise through the silence",
-  description: "We're designing tools for deep thinkers, bold creators, and quiet rebels.",
+  title: "AVA Developers — Engineering scalable web ecosystems",
+  description: "AVA Developers is a Node.js-focused development studio designing high-performance backends and immersive 3D interfaces.",
 };
 
 export default function RootLayout({
