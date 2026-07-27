@@ -82,23 +82,23 @@ export const PROJECTS_DATA: ProjectItem[] = [
   */
   {
     title: "Project_02",
-    description: "Secured enterprise log manager tracking database queries in real-time.",
-    image: "/images/project2.png",
-    tags: ["Express", "MongoDB", "Docker"],
+    description: "Coming Soon — Immersive digital product currently in development.",
+    image: "/images/coming_soon.png",
+    tags: ["Backend", "Scaling"],
     link: "#",
   },
   {
     title: "Project_03",
-    description: "Browser game engine handling real-time peer sockets and 3D layers.",
-    image: "/images/project3.png",
-    tags: ["React", "Socket.io", "Three.js"],
+    description: "Coming Soon — Immersive digital product currently in development.",
+    image: "/images/coming_soon.png",
+    tags: ["React", "WebGL"],
     link: "#",
   },
   {
     title: "Project_04",
-    description: "Clean cloud system interface displaying server resources usage.",
-    image: "/images/project3.png",
-    tags: ["Next.js", "Tailwind", "Redis"],
+    description: "Coming Soon — Immersive digital product currently in development.",
+    image: "/images/coming_soon.png",
+    tags: ["System", "Cloud"],
     link: "#",
   },
 ];
