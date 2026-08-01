@@ -72,7 +72,7 @@ export default function Services() {
             OUR EXPERTISE
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-white font-sans tracking-tight">
-            Construction, perfected.
+            Software, perfected.
           </h2>
         </div>
 

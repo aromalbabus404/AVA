@@ -65,24 +65,17 @@ export const SERVICES_DATA: ServiceItem[] = [
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
-    title: "Civil & Structural Construction",
-    description: "Working details: Executing perfect structural work including foundations and columns. Best design practices: Applying premium seismic resilience analysis and modern reinforced concrete frame engineering to guarantee safety and architectural durability.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&auto=format&fit=crop",
-    tags: ["Perfect Structural Work", "Best Design", "Seismic Resilience"],
+    title: "E-Commerce Core & Checkout Infrastructure",
+    description: "Working details: Building high-concurrency payment APIs and database structures. Best design practices: Designing caching policies and robust message queues to ensure transaction safety and speed.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1d704d3?q=80&w=600&auto=format&fit=crop",
+    tags: ["High-Concurrency APIs", "Best Architecture", "Database Caching"],
     link: "#",
   },
   {
-    title: "Architectural Drafting & Layouts",
-    description: "Working details: Developing perfect CAD layouts and elevations. Best design practices: Crafting modern spacing floorplans, optimizing daylight angles, and ensuring high-end premium interior design integration.",
-    image: "https://images.unsplash.com/photo-1503387762-592dedb882d7?q=80&w=600&auto=format&fit=crop",
-    tags: ["Best Design Layouts", "Perfect Architectural Work"],
-    link: "#",
-  },
-  {
-    title: "MEP Services Integration",
-    description: "Working details: Conducting perfect engineering execution for HVAC, electrical conduits, and plumbing. Best design practices: Designing smart energy-efficient automation networks and premium solar power grids.",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=600&auto=format&fit=crop",
-    tags: ["Precision MEP Systems", "Perfect Engineering Work"],
+    title: "Real-Time Collaboration Dashboard",
+    description: "Working details: Synchronizing state over WebSockets and building real-time collaboration engines. Best design practices: Creating fast, responsive visual states and optimized UI rendering pipelines.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
+    tags: ["WebSockets Sync", "Real-Time UI"],
     link: "#",
   },
 ];

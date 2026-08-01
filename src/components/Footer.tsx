@@ -26,7 +26,7 @@ export default function Footer() {
             AVA Developers
           </span>
           <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-semibold">
-            Construction, perfected.
+            Engineering, perfected.
           </span>
         </div>
 
