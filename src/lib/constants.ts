@@ -91,21 +91,21 @@ export const WHATSAPP_CONTACTS = [
   {
     name: "Adhykrishna",
     number: "+91 62824 47261",
-    link: "https://wa.me/916282447261",
+    link: "https://wa.me/916282447261?text=Hi%20Adhykrishna,%20I%20would%20like%20to%20discuss%20working%20together%20on%20a%20project%20with%20AVA%20Developers!",
     avatarText: "AK",
     description: "Oversees frontend logic, React component architecture, and premium user interface engineering."
   },
   {
     name: "Viswas Y",
     number: "+91 97473 62645",
-    link: "https://wa.me/919747362645",
+    link: "https://wa.me/919747362645?text=Hi%20Viswas,%20I%20would%20like%20to%20discuss%20working%20together%20on%20a%20project%20with%20AVA%20Developers!",
     avatarText: "VY",
     description: "Coordinates client project delivery, software roadmaps, and handles active communication on WhatsApp."
   },
   {
     name: "Aromal Babu",
     number: "+91 73564 62150",
-    link: "https://wa.me/917356462150",
+    link: "https://wa.me/917356462150?text=Hi%20Aromal,%20I%20would%20like%20to%20discuss%20working%20together%20on%20a%20project%20with%20AVA%20Developers!",
     avatarText: "AB",
     description: "Specializes in high-throughput Node.js backend systems, database performance, and API design."
   }
