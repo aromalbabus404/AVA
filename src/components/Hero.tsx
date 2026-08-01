@@ -28,9 +28,9 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="inline-block"
           >
-            Engineering scalable{" "}
+            Best designs,{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">
-              web ecosystems.
+              perfect works.
             </span>
           </motion.span>
         </h1>
@@ -43,7 +43,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="inline-block text-muted-foreground text-base sm:text-lg leading-relaxed font-body font-medium"
           >
-            AVA Developers engineers fast, scalable Node.js and Next.js applications, and premium 3D web experiences with Three.js.
+            AVA Developers designs premium architectural layouts, robust structural civil plans, and high-performance web systems to execute perfect physical and digital works.
           </motion.span>
         </p>
 
@@ -62,10 +62,10 @@ export default function Hero() {
           </button>
           
           <button 
-            onClick={(e) => handleScroll(e, "#projects")}
+            onClick={(e) => handleScroll(e, "#about")}
             className="text-sm font-medium text-muted-foreground hover:text-cyan-400 transition-colors duration-300 cursor-pointer bg-transparent border-none"
           >
-            View Our Work &rarr;
+            Learn More &rarr;
           </button>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
-          onClick={(e) => handleScroll(e, "#services")}
+          onClick={(e) => handleScroll(e, "#how-we-work")}
         >
           <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-body font-semibold">
             Scroll

@@ -64,7 +64,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-32 px-6 max-w-5xl mx-auto z-10 text-center select-none bg-transparent"
+      className="relative py-[50px] px-6 max-w-5xl mx-auto z-10 text-center select-none bg-transparent"
     >
       {/* Intro Text Block */}
       <div
@@ -77,10 +77,10 @@ export default function About() {
           Who We Are
         </span>
         <h2 className="text-4xl sm:text-5xl font-display font-bold text-white leading-tight">
-          A small team, obsessed with craft.
+          A dedicated team, obsessed with precision.
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mt-2 font-medium font-body">
-          AVA Developers is a Node.js-focused development studio. We partner with founders and teams to design and build fast, scalable, beautifully engineered web products — from backend architecture to premium 3D front-end experiences.
+          AVA Developers is a premium engineering and design studio. We partner with clients to deliver detailed civil drawings, concrete foundation calculations, CAD elevations, and high-performance, scalable Node.js and Next.js software platforms — ensuring perfect execution and the best design practices.
         </p>
       </div>
 

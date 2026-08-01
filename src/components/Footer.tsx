@@ -26,7 +26,7 @@ export default function Footer() {
             AVA Developers
           </span>
           <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-semibold">
-            Engineering, designed.
+            Construction, perfected.
           </span>
         </div>
 
@@ -35,11 +35,8 @@ export default function Footer() {
           <a href="#home" onClick={(e) => handleScroll(e, "#home")} className="hover:text-white transition-colors duration-200">
             Home
           </a>
-          <a href="#services" onClick={(e) => handleScroll(e, "#services")} className="hover:text-white transition-colors duration-200">
-            Services
-          </a>
-          <a href="#projects" onClick={(e) => handleScroll(e, "#projects")} className="hover:text-white transition-colors duration-200">
-            Projects
+          <a href="#how-we-work" onClick={(e) => handleScroll(e, "#how-we-work")} className="hover:text-white transition-colors duration-200">
+            How We Work
           </a>
           <a href="#about" onClick={(e) => handleScroll(e, "#about")} className="hover:text-white transition-colors duration-200">
             About
