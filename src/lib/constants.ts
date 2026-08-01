@@ -107,14 +107,14 @@ export const WHATSAPP_CONTACTS = [
     number: "+91 97473 62645",
     link: "https://wa.me/919747362645",
     avatarText: "VY",
-    description: "Specializes in high-throughput Node.js backend systems, database performance, and API design."
+    description: "Coordinates client project delivery, software roadmaps, and handles active communication on WhatsApp."
   },
   {
     name: "Aromal Babu",
     number: "+91 73564 62150",
     link: "https://wa.me/917356462150",
     avatarText: "AB",
-    description: "Coordinates client project delivery, software roadmaps, and handles active communication on WhatsApp."
+    description: "Specializes in high-throughput Node.js backend systems, database performance, and API design."
   }
 ];
 
