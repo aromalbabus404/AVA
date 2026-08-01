@@ -27,7 +27,7 @@ function TeamMemberCard({ member, index, className = "" }: { member: TeamMember;
       } ${className}`}
     >
       {/* Avatar Circle */}
-      <div className="w-20 h-20 rounded-full flex items-center justify-center bg-gradient-to-tr from-cyan-400 to-violet-500 text-white font-display text-2xl font-bold shadow-lg">
+      <div className="w-20 h-20 rounded-full flex-shrink-0 flex items-center justify-center bg-gradient-to-tr from-cyan-400 to-violet-500 text-white font-display text-2xl font-bold shadow-lg">
         {member.avatarText}
       </div>
 
@@ -38,7 +38,7 @@ function TeamMemberCard({ member, index, className = "" }: { member: TeamMember;
         </h3>
       </div>
 
-      <p className="text-xs text-muted-foreground font-body leading-relaxed max-w-[220px] mt-2">
+      <p className="text-xs text-muted-foreground font-body leading-relaxed max-w-[220px] mt-2 font-medium">
         {member.description}
       </p>
 
@@ -86,7 +86,7 @@ export default function Team() {
       </div>
 
       {/* Team grid */}
-      <div className="grid grid-cols-2 gap-6 w-full max-w-4xl mx-auto justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl mx-auto justify-center">
         {WHATSAPP_CONTACTS.map((member, index) => {
           const isLast = index === WHATSAPP_CONTACTS.length - 1;
           return (
@@ -94,7 +94,7 @@ export default function Team() {
               key={member.name} 
               member={member} 
               index={index} 
-              className={isLast ? "col-span-2 justify-self-center w-full max-w-[calc(50%-12px)]" : "w-full"}
+              className={isLast ? "sm:col-span-2 md:col-span-1 sm:max-w-[calc(50%-12px)] md:max-w-none sm:mx-auto md:mx-0 w-full" : "w-full"}
             />
           );
         })}

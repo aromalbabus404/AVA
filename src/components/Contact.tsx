@@ -25,19 +25,19 @@ export default function Contact() {
       </p>
 
       {/* WhatsApp Directory Cards */}
-      <div className="grid grid-cols-2 gap-6 mt-12 w-full max-w-4xl mx-auto text-left font-body justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 w-full max-w-5xl mx-auto text-left font-body justify-center">
         {WHATSAPP_CONTACTS.map((member, index) => {
           const isLast = index === WHATSAPP_CONTACTS.length - 1;
           return (
             <div 
               key={member.name} 
-              className={`rounded-2xl p-6 bg-white/[0.02] border border-white/10 hover:border-[#25D366]/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between h-full group ${
-                isLast ? "col-span-2 justify-self-center w-full max-w-[calc(50%-12px)]" : "w-full"
+              className={`rounded-2xl p-6 bg-white/[0.02] border border-white/10 hover:border-[#25D366]/40 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between h-full group w-full ${
+                isLast ? "sm:col-span-2 md:col-span-1 sm:max-w-[calc(50%-12px)] md:max-w-none sm:mx-auto md:mx-0" : ""
               }`}
             >
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-tr from-cyan-400 to-violet-500 text-white font-display text-lg font-bold shadow-lg">
+                  <div className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center bg-gradient-to-tr from-cyan-400 to-violet-500 text-white font-display text-lg font-bold shadow-lg">
                     {member.avatarText}
                   </div>
                   <div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     </h4>
                   </div>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-6">
+                <p className="text-xs text-muted-foreground leading-relaxed mb-6 font-medium">
                   Tap below to send a message directly to {member.name.split(" ")[0]} regarding working details.
                 </p>
               </div>

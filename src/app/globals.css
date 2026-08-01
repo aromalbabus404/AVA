@@ -86,3 +86,51 @@ html, body {
   pointer-events: none;
   z-index: 999;
 }
+
+/* Background floating and pulsing animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.2;
+  }
+  33% {
+    transform: translateY(-30px) translateX(15px) scale(1.15);
+    opacity: 0.5;
+  }
+  66% {
+    transform: translateY(15px) translateX(-20px) scale(0.9);
+    opacity: 0.3;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-glow 12s ease-in-out infinite;
+}
+
+.animate-pulse-slower {
+  animation: pulse-glow 18s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 25s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 18s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 12s ease-in-out infinite;
+}
+
