@@ -80,7 +80,7 @@ export default function About() {
           A dedicated team, obsessed with precision.
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mt-2 font-medium font-body">
-          AVA Developers is a premium engineering and design studio. We partner with clients to deliver detailed civil drawings, concrete foundation calculations, CAD elevations, and high-performance, scalable Node.js and Next.js software platforms — ensuring perfect execution and the best design practices.
+          AVA Developers is a premium software engineering and design studio. We partner with clients to deliver high-performance Node.js backend architectures, responsive Next.js & React user interfaces, and automated cloud deployment pipelines — ensuring perfect execution and the best design practices.
         </p>
       </div>
 
