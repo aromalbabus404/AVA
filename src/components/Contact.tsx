@@ -12,7 +12,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={containerRef}
-      className={`relative py-[50px] px-6 max-w-4xl mx-auto z-10 text-center select-none bg-transparent transition-all duration-1000 ${
+      className={`relative py-[30px] md:py-[50px] px-6 max-w-4xl mx-auto z-10 text-center select-none bg-transparent transition-all duration-1000 ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       }`}
     >

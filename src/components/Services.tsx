@@ -55,7 +55,7 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="relative py-20 px-6 w-full overflow-hidden select-none bg-[#0A0E27]"
+      className="relative py-[30px] md:py-20 px-6 w-full overflow-hidden select-none bg-[#0A0E27]"
     >
       {/* Subtle radial glow in top-left */}
       <div 

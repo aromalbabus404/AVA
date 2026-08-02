@@ -65,7 +65,7 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="relative py-[50px] px-6 max-w-5xl mx-auto z-10 text-center select-none bg-transparent"
+      className="relative py-[30px] md:py-[50px] px-6 max-w-5xl mx-auto z-10 text-center select-none bg-transparent"
     >
       {/* Header */}
       <div

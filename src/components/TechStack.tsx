@@ -19,7 +19,7 @@ export default function TechStack() {
   const marqueeItems = [...TECH_ITEMS, ...TECH_ITEMS, ...TECH_ITEMS];
 
   return (
-    <section className="relative py-20 w-full overflow-hidden bg-black/10 border-b border-white/5 z-10 select-none">
+    <section className="relative py-[30px] md:py-20 w-full overflow-hidden bg-black/10 border-b border-white/5 z-10 select-none">
       {/* Absolute left/right gradient masking to hide edges */}
       <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#05060a] to-transparent z-20 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#05060a] to-transparent z-20 pointer-events-none" />

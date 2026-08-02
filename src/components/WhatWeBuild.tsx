@@ -103,7 +103,7 @@ export default function WhatWeBuild() {
   return (
     <section 
       id="what-we-build" 
-      className="relative py-24 px-6 w-full select-none"
+      className="relative py-[30px] md:py-24 px-6 w-full select-none"
     >
       {/* Background glow orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none opacity-20 bg-gradient-to-tr from-cyan-500/10 to-violet-500/10 blur-[100px] z-0" />

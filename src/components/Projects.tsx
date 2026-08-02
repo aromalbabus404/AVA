@@ -92,7 +92,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-32 px-6 w-full bg-white/[0.01] border-y border-white/5 z-10 select-none"
+      className="relative py-[30px] md:py-32 px-6 w-full bg-white/[0.01] border-y border-white/5 z-10 select-none"
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-16">
         {/* Header */}

@@ -44,7 +44,7 @@ export default function HowWeWork() {
   return (
     <section 
       id="how-we-work" 
-      className="relative py-[50px] px-6 w-full overflow-hidden select-none bg-[#0A0E27]"
+      className="relative py-[30px] md:py-[50px] px-6 w-full overflow-hidden select-none bg-[#0A0E27]"
     >
       {/* Subtle background glow */}
       <div 
