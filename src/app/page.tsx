@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import WhatWeBuild from "@/components/WhatWeBuild";
 import HowWeWork from "@/components/HowWeWork";
 import About from "@/components/About";
 import Team from "@/components/Team";
@@ -66,16 +67,19 @@ export default function Home() {
         {/* 1. Hero Page Section */}
         <Hero />
 
-        {/* 2. How We Work Section */}
+        {/* 2. What We Build Section */}
+        <WhatWeBuild />
+
+        {/* 3. How We Work Section */}
         <HowWeWork />
 
-        {/* 3. About Company Section */}
+        {/* 4. About Company Section */}
         <About />
 
-        {/* 4. Team Section */}
+        {/* 5. Team Section */}
         <Team />
 
-        {/* 5. Validated Contact Interface */}
+        {/* 6. Validated Contact Interface */}
         <Contact />
 
         {/* Footer Branding Columns */}
