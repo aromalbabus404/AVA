@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 function MobileStatusTicker() {
-  const messages = ["AVA STUDIO", "WE BUILD APPS", "READY TO GROW", "LET'S TALK"];
+  const messages = ["AVA DEVELOPERS", "WE BUILD APPS", "READY TO GROW", "LET'S TALK"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
