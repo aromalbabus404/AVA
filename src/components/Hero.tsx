@@ -43,7 +43,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="inline-block text-muted-foreground text-base sm:text-lg leading-relaxed font-body font-medium"
           >
-            AVA Developers is an engineering collective designing high-performance backends, fast React interfaces, and robust cloud infrastructure for modern web applications.
+            AVA Web Developers is an engineering collective designing high-performance backends, fast React interfaces, and robust cloud infrastructure for modern web applications.
           </motion.span>
         </p>
 
