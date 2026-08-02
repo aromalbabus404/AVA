@@ -6,7 +6,7 @@ import { STATS_DATA, StatItem } from "@/lib/constants";
 
 function AnimatedStat({ stat, index }: { stat: StatItem; index: number }) {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, margin: "-100px" });
+  const isInView = useInView(containerRef, { once: true, margin: "-10px" });
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -59,7 +59,7 @@ function AnimatedStat({ stat, index }: { stat: StatItem; index: number }) {
 
 export default function About() {
   const infoRef = useRef(null);
-  const isInfoInView = useInView(infoRef, { once: true, margin: "-150px" });
+  const isInfoInView = useInView(infoRef, { once: true, margin: "-20px" });
 
   return (
     <section
