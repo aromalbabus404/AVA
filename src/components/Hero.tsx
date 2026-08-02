@@ -15,10 +15,10 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen w-full flex flex-col justify-center items-center z-10 select-none bg-transparent"
+      className="relative min-h-[auto] md:min-h-screen w-full flex flex-col justify-center items-center z-10 select-none bg-transparent"
     >
       {/* Hero Content Overlay */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-24 max-w-7xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-[110px] md:pt-32 pb-[30px] md:pb-24 max-w-7xl mx-auto">
         
         {/* Animated Title */}
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-display font-bold tracking-tight leading-[0.95] text-white max-w-5xl overflow-hidden">
@@ -74,7 +74,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
+          className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 cursor-pointer"
           onClick={(e) => handleScroll(e, "#how-we-work")}
         >
           <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-body font-semibold">
