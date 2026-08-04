@@ -4,36 +4,12 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 function MobileStatusTicker() {
-  const messages = ["NEXTHUBTECHNOLOGIES", "WE BUILD APPS", "READY TO GROW", "LET'S TALK"];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % messages.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <div className="flex md:hidden items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.03] border border-white/5 overflow-hidden max-w-[130px]">
-      <span className="relative flex h-1.5 w-1.5 shrink-0">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#22D3EE] opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#22D3EE]"></span>
+    <div className="flex md:hidden items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.03] border border-white/5 whitespace-nowrap">
+      <span className="h-1.5 w-1.5 rounded-full bg-[#22D3EE] shrink-0"></span>
+      <span className="text-[8px] font-bold tracking-wider text-[#22D3EE] uppercase">
+        NextHubTechnologies
       </span>
-      <div className="h-4 overflow-hidden relative w-20">
-        {messages.map((msg, i) => (
-          <span
-            key={msg}
-            className={`absolute inset-0 text-[8px] font-bold tracking-wider text-[#22D3EE] flex items-center justify-start transition-all duration-500 transform whitespace-nowrap ${
-              i === index 
-                ? "translate-y-0 opacity-100" 
-                : "translate-y-4 opacity-0"
-            }`}
-          >
-            {msg}
-          </span>
-        ))}
-      </div>
     </div>
   );
 }
