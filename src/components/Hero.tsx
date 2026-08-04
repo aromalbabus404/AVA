@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-[110px] md:pt-32 pb-[30px] md:pb-24 max-w-7xl mx-auto">
         
         {/* Animated Title */}
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-display font-bold tracking-tight leading-[0.95] text-white max-w-5xl overflow-hidden">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl font-display font-bold tracking-tight leading-[0.95] text-slate-900 max-w-5xl overflow-hidden">
           <motion.span
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -29,7 +29,7 @@ export default function Hero() {
             className="inline-block"
           >
             Best designs,{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-600 to-violet-600 bg-clip-text text-transparent">
               perfect works.
             </span>
           </motion.span>
@@ -41,7 +41,7 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-block text-muted-foreground text-base sm:text-lg leading-relaxed font-body font-medium"
+            className="inline-block text-slate-600 text-base sm:text-lg leading-relaxed font-body font-medium"
           >
             NextHubTechnologies is an engineering collective designing high-performance backends, fast React interfaces, and robust cloud infrastructure for modern web applications.
           </motion.span>
@@ -56,14 +56,14 @@ export default function Hero() {
         >
           <button 
             onClick={(e) => handleScroll(e, "#contact")}
-            className="rounded-full px-10 py-4 text-base font-semibold text-white border border-cyan-400/50 hover:bg-cyan-400/10 hover:scale-[1.03] transition-all duration-300 cursor-pointer"
+            className="rounded-full px-10 py-4 text-base font-semibold text-white bg-slate-900 hover:bg-slate-800 hover:scale-[1.03] transition-all duration-300 cursor-pointer shadow-lg shadow-slate-950/10"
           >
             Start a Project
           </button>
           
           <button 
             onClick={(e) => handleScroll(e, "#about")}
-            className="text-sm font-medium text-muted-foreground hover:text-cyan-400 transition-colors duration-300 cursor-pointer bg-transparent border-none"
+            className="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors duration-300 cursor-pointer bg-transparent border-none"
           >
             Learn More &rarr;
           </button>
@@ -77,14 +77,14 @@ export default function Hero() {
           className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 cursor-pointer"
           onClick={(e) => handleScroll(e, "#how-we-work")}
         >
-          <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-body font-semibold">
+          <span className="text-[10px] uppercase tracking-widest text-slate-400 font-body font-semibold">
             Scroll
           </span>
-          <div className="w-5 h-8 rounded-full border-2 border-white/20 flex justify-center p-1">
+          <div className="w-5 h-8 rounded-full border-2 border-slate-300 flex justify-center p-1">
             <motion.div 
               animate={{ y: [0, 8, 0] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-              className="w-1.5 h-1.5 rounded-full bg-white"
+              className="w-1.5 h-1.5 rounded-full bg-slate-700"
             />
           </div>
         </motion.div>

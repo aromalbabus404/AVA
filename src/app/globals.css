@@ -14,17 +14,17 @@
 }
 
 :root {
-  --background: 240 20% 5%;
-  --foreground: 0 0% 98%;
-  --muted-foreground: 240 6% 60%;
-  --primary: 0 0% 98%;
-  --primary-foreground: 240 20% 5%;
-  --secondary: 240 15% 10%;
-  --muted: 240 15% 10%;
-  --accent-cyan: 190 100% 60%;
-  --accent-violet: 265 90% 65%;
-  --border: 240 10% 20%;
-  --input: 240 10% 20%;
+  --background: 220 15% 97%;
+  --foreground: 224 71.4% 4.1%;
+  --muted-foreground: 220 8.9% 46.1%;
+  --primary: 224 71.4% 4.1%;
+  --primary-foreground: 210 20% 98%;
+  --secondary: 220 14.3% 95.9%;
+  --muted: 220 14.3% 95.9%;
+  --accent-cyan: 195 100% 40%;
+  --accent-violet: 262 80% 50%;
+  --border: 220 13% 88%;
+  --input: 220 13% 88%;
 }
 
 html, body {
@@ -39,16 +39,16 @@ html, body {
 
 /* Premium Glassmorphism Card Utility */
 .glass-card {
-  background: rgba(10, 12, 18, 0.45);
+  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.04);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
-  border-color: hsla(var(--accent-cyan) / 0.3);
+  border-color: hsla(var(--accent-cyan) / 0.4);
   box-shadow: 0 12px 40px 0 hsla(var(--accent-cyan) / 0.08);
 }
 

@@ -27,7 +27,7 @@ export default function Navbar() {
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto max-w-[95vw] select-none transition-all duration-300">
       <div className="relative w-full">
         {/* Main Header Row */}
-        <header className="flex flex-row items-center justify-between bg-[#111111]/90 border border-white/10 px-6 py-2.5 rounded-full shadow-2xl backdrop-blur-md gap-4 md:gap-16">
+        <header className="flex flex-row items-center justify-between bg-white/75 border border-slate-200/50 px-6 py-2.5 rounded-full shadow-lg shadow-slate-200/50 backdrop-blur-md gap-4 md:gap-16">
           
           {/* Logo */}
           <a 
@@ -35,13 +35,12 @@ export default function Navbar() {
             onClick={(e) => handleScroll(e, "#home")} 
             className="flex items-center group cursor-pointer"
           >
-            <div className="h-8 rounded-lg bg-gradient-to-tr from-cyan-400 to-violet-500 p-[1.5px] transition-transform duration-300 group-hover:scale-105">
-              <div className="w-full h-full bg-[#111111] rounded-[7px] px-3.5 flex items-center justify-center transition-all duration-300 group-hover:bg-transparent">
-                <span className="font-display font-black text-xs tracking-widest bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent group-hover:text-white transition-colors duration-200">
-                  NextHubTechnologies
-                </span>
-              </div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/images/logo_transparent.png" 
+              alt="NextHubTechnologies" 
+              className="h-16 w-auto -my-4 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop Navigation Links */}
@@ -51,7 +50,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleScroll(e, link.href)}
-                className="text-xs md:text-sm font-semibold text-white/70 hover:text-white transition-colors duration-200 whitespace-nowrap"
+                className="text-xs md:text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors duration-200 whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -61,7 +60,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex md:hidden items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-200"
+            className="flex md:hidden items-center justify-center w-8 h-8 rounded-full bg-slate-100/80 border border-slate-200/60 text-slate-800 hover:text-slate-950 hover:bg-slate-200 transition-all duration-200"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
@@ -71,13 +70,13 @@ export default function Navbar() {
 
         {/* Mobile Dropdown Panel */}
         {isOpen && (
-          <div className="absolute top-[calc(100%+12px)] left-0 right-0 md:hidden bg-[#111111]/95 border border-white/10 rounded-2xl p-4 shadow-2xl backdrop-blur-lg flex flex-col gap-1.5 animate-dropdown-fade z-40">
+          <div className="absolute top-[calc(100%+12px)] left-0 right-0 md:hidden bg-white/95 border border-slate-200/60 rounded-2xl p-4 shadow-xl shadow-slate-200/40 backdrop-blur-lg flex flex-col gap-1.5 animate-dropdown-fade z-40">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleScroll(e, link.href)}
-                className="w-full px-4 py-2.5 rounded-xl hover:bg-white/5 text-sm font-semibold text-white/75 hover:text-white transition-all duration-200 border border-transparent hover:border-white/5 flex items-center"
+                className="w-full px-4 py-2.5 rounded-xl hover:bg-slate-50 text-sm font-semibold text-slate-700 hover:text-slate-900 transition-all duration-200 border border-transparent hover:border-slate-100 flex items-center"
               >
                 {link.label}
               </a>

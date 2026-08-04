@@ -30,32 +30,32 @@ export default function Home() {
 
   return (
     <div 
-      className="relative min-h-screen text-white overflow-x-hidden font-body"
+      className="relative min-h-screen text-slate-800 overflow-x-hidden font-body"
       style={{
-        backgroundColor: "#030206",
-        backgroundImage: "radial-gradient(circle at 50% 0%, #151030 0%, #07060e 55%, #030206 100%)",
+        backgroundColor: "#f4f5f8",
+        backgroundImage: "radial-gradient(circle at 50% 0%, #e2e5f0 0%, #f1f3f9 55%, #f4f5f8 100%)",
       }}
     >
       {/* 1. Global Subtle Grain Texture Overlay */}
       <div className="grain-overlay" />
 
       {/* 2. Interactive 3D Space Scene Background */}
-      <div className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-80">
+      <div className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-40 mix-blend-multiply">
         <SpaceScene scrollProgress={scrollProgress} />
       </div>
 
       {/* 3. Premium Static & Animating Ambient Glow Orbs */}
-      <div className="absolute top-[10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-500/5 blur-[120px] pointer-events-none z-0 animate-pulse-slow" />
-      <div className="absolute top-[40%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-violet-600/5 blur-[150px] pointer-events-none z-0 animate-pulse-slower" />
-      <div className="absolute bottom-[10%] left-[10%] w-[45vw] h-[45vw] rounded-full bg-teal-500/4 blur-[100px] pointer-events-none z-0 animate-pulse-slow" />
+      <div className="absolute top-[10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-400/10 blur-[120px] pointer-events-none z-0 animate-pulse-slow" />
+      <div className="absolute top-[40%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-violet-400/8 blur-[150px] pointer-events-none z-0 animate-pulse-slower" />
+      <div className="absolute bottom-[10%] left-[10%] w-[45vw] h-[45vw] rounded-full bg-teal-400/8 blur-[100px] pointer-events-none z-0 animate-pulse-slow" />
 
       {/* 4. Standard Beautiful Floating Particles (HTML/CSS animations) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 select-none">
-        <div className="absolute top-[15%] left-[15%] w-2 h-2 rounded-full bg-cyan-400/30 animate-float-slow" />
-        <div className="absolute top-[35%] right-[20%] w-3 h-3 rounded-full bg-violet-400/25 animate-float-medium" />
-        <div className="absolute top-[60%] left-[8%] w-1.5 h-1.5 rounded-full bg-teal-400/35 animate-float-fast" />
-        <div className="absolute top-[80%] right-[15%] w-2.5 h-2.5 rounded-full bg-cyan-300/20 animate-float-slow" />
-        <div className="absolute top-[50%] right-[45%] w-2 h-2 rounded-full bg-white/20 animate-float-medium" />
+        <div className="absolute top-[15%] left-[15%] w-2 h-2 rounded-full bg-cyan-500/30 animate-float-slow" />
+        <div className="absolute top-[35%] right-[20%] w-3 h-3 rounded-full bg-violet-500/25 animate-float-medium" />
+        <div className="absolute top-[60%] left-[8%] w-1.5 h-1.5 rounded-full bg-teal-500/35 animate-float-fast" />
+        <div className="absolute top-[80%] right-[15%] w-2.5 h-2.5 rounded-full bg-cyan-400/20 animate-float-slow" />
+        <div className="absolute top-[50%] right-[45%] w-2 h-2 rounded-full bg-slate-400/30 animate-float-medium" />
       </div>
 
       {/* Sticky Navigation Header */}
