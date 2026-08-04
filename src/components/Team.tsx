@@ -81,7 +81,7 @@ export default function Team() {
           Meet the Developers
         </h2>
         <p className="text-muted-foreground text-sm font-medium font-body leading-relaxed max-w-md">
-          AVA Web Developers are a team of expert software engineers and designers building high-performance web ecosystems.
+          NextHubTechnologies is a team of expert software engineers and designers building high-performance web ecosystems.
         </p>
       </div>
 

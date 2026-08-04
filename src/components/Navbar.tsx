@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 function MobileStatusTicker() {
-  const messages = ["AVA WEB DEVELOPERS", "WE BUILD APPS", "READY TO GROW", "LET'S TALK"];
+  const messages = ["NEXTHUBTECHNOLOGIES", "WE BUILD APPS", "READY TO GROW", "LET'S TALK"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export default function Navbar() {
         {/* Main Header Row */}
         <header className="flex flex-row items-center justify-between bg-[#111111]/90 border border-white/10 px-6 py-2.5 rounded-full shadow-2xl backdrop-blur-md gap-4 md:gap-16">
           
-          {/* AVA Logo */}
+          {/* Logo */}
           <a 
             href="#home" 
             onClick={(e) => handleScroll(e, "#home")} 
@@ -73,7 +73,7 @@ export default function Navbar() {
             <div className="h-8 rounded-lg bg-gradient-to-tr from-cyan-400 to-violet-500 p-[1.5px] transition-transform duration-300 group-hover:scale-105">
               <div className="w-full h-full bg-[#111111] rounded-[7px] px-3.5 flex items-center justify-center transition-all duration-300 group-hover:bg-transparent">
                 <span className="font-display font-black text-xs tracking-widest bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent group-hover:text-white transition-colors duration-200">
-                  AVA
+                  NextHubTechnologies
                 </span>
               </div>
             </div>

@@ -23,7 +23,7 @@ export default function Footer() {
             className="text-2xl font-display font-bold tracking-tight text-white cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            AVA Web Developers
+            NextHubTechnologies
           </span>
           <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-semibold">
             Engineering, perfected.
@@ -49,7 +49,7 @@ export default function Footer() {
 
       {/* Copyright Line */}
       <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-white/5 text-center text-[10px] text-muted-foreground">
-        &copy; {currentYear} AVA Web Developers. All rights reserved.
+        &copy; {currentYear} NextHubTechnologies. All rights reserved.
       </div>
     </footer>
   );
