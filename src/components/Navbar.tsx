@@ -3,17 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-function MobileStatusTicker() {
-  return (
-    <div className="flex md:hidden items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.03] border border-white/5 whitespace-nowrap">
-      <span className="h-1.5 w-1.5 rounded-full bg-[#22D3EE] shrink-0"></span>
-      <span className="text-[8px] font-bold tracking-wider text-[#22D3EE] uppercase">
-        NextHubTechnologies
-      </span>
-    </div>
-  );
-}
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,9 +43,6 @@ export default function Navbar() {
               </div>
             </div>
           </a>
-
-          {/* Micro status ticker for mobile only, fills the middle gap */}
-          <MobileStatusTicker />
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex flex-row items-center gap-7 font-body">
