@@ -7,7 +7,6 @@ import Hero from "@/components/Hero";
 import WhatWeBuild from "@/components/WhatWeBuild";
 import HowWeWork from "@/components/HowWeWork";
 import About from "@/components/About";
-import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -75,9 +74,6 @@ export default function Home() {
 
         {/* 4. About Company Section */}
         <About />
-
-        {/* 5. Team Section */}
-        <Team />
 
         {/* 6. Validated Contact Interface */}
         <Contact />
