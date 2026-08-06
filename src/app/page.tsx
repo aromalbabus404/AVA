@@ -9,34 +9,12 @@ import HowWeWork from "@/components/HowWeWork";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import IntroVideo from "@/components/IntroVideo";
 
 // Safely load SpaceScene on client side only to avoid WebGL/window SSR issues
 const SpaceScene = dynamic(() => import("@/components/SpaceScene"), { ssr: false });
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [showIntro, setShowIntro] = useState(false);
-
-  useEffect(() => {
-    // Check if intro was already seen in this session
-    const watched = sessionStorage.getItem("watchedIntro");
-    if (!watched) {
-      setShowIntro(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    // Lock scroll when intro is playing
-    if (showIntro) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [showIntro]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,22 +29,13 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      {showIntro && (
-        <IntroVideo
-          onComplete={() => {
-            sessionStorage.setItem("watchedIntro", "true");
-            setShowIntro(false);
-          }}
-        />
-      )}
-      <div 
-        className="relative min-h-screen text-slate-800 overflow-x-hidden font-body"
-        style={{
-          backgroundColor: "#f4f5f8",
-          backgroundImage: "radial-gradient(circle at 50% 0%, #e2e5f0 0%, #f1f3f9 55%, #f4f5f8 100%)",
-        }}
-      >
+    <div 
+      className="relative min-h-screen text-slate-800 overflow-x-hidden font-body"
+      style={{
+        backgroundColor: "#f4f5f8",
+        backgroundImage: "radial-gradient(circle at 50% 0%, #e2e5f0 0%, #f1f3f9 55%, #f4f5f8 100%)",
+      }}
+    >
       {/* 1. Global Subtle Grain Texture Overlay */}
       <div className="grain-overlay" />
 
@@ -113,7 +82,6 @@ export default function Home() {
         <Footer />
       </div>
     </div>
-    </>
   );
 }
 
