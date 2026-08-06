@@ -44,7 +44,7 @@ export default function Navbar() {
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto max-w-[95vw] select-none transition-all duration-300">
       <div className="relative w-full">
         {/* Main Header Row - Solid White Theme matching video background */}
-        <header className="flex flex-row items-center justify-between bg-white border border-slate-200/50 px-6 py-0.5 sm:py-1 rounded-full shadow-lg shadow-slate-200/50 gap-4 md:gap-16">
+        <header className="flex flex-row items-center justify-between bg-white border border-slate-200/50 px-6 py-2 sm:py-1 rounded-full shadow-lg shadow-slate-200/50 gap-4 md:gap-16">
           
           {/* Animated Video Logo */}
           <a 
