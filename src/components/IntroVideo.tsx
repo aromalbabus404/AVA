@@ -69,16 +69,16 @@ export default function IntroVideo({ onComplete }: IntroVideoProps) {
             playsInline
             onTimeUpdate={handleTimeUpdate}
             onEnded={handleVideoEnded}
-            className="w-full h-full object-cover pointer-events-none"
+            className="w-full h-full object-cover object-center pointer-events-none"
           />
 
           {/* Premium Bottom Info Overlay (without button controls) */}
-          <div className="absolute bottom-10 left-6 right-6 md:left-12 md:right-12 z-20 flex flex-col md:flex-row items-center justify-between gap-6 pointer-events-none select-none">
-            <div className="flex flex-col gap-1 text-center md:text-left">
-              <span className="text-xs font-bold text-cyan-400 tracking-[3px] uppercase font-body">
+          <div className="absolute bottom-6 sm:bottom-10 left-4 right-4 sm:left-12 sm:right-12 z-20 flex flex-col md:flex-row items-center justify-between gap-4 pointer-events-none select-none">
+            <div className="flex flex-col gap-1 text-center md:text-left max-w-lg sm:max-w-2xl">
+              <span className="text-[10px] sm:text-xs font-bold text-cyan-400 tracking-[3px] uppercase font-body">
                 Welcome to NextHub
               </span>
-              <h2 className="text-2xl font-bold font-display text-white">
+              <h2 className="text-lg sm:text-2xl md:text-3xl font-bold font-display text-white leading-tight">
                 Designing the Future of Web Applications
               </h2>
             </div>
