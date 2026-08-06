@@ -1,10 +1,27 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+      try {
+        video.load();
+        video.play().catch((err) => {
+          console.log("Navbar video autoplay blocked", err);
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  }, []);
 
   const navLinks = [
     { label: "Home", href: "#home" },
@@ -26,21 +43,45 @@ export default function Navbar() {
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto max-w-[95vw] select-none transition-all duration-300">
       <div className="relative w-full">
-        {/* Main Header Row */}
-        <header className="flex flex-row items-center justify-between bg-white/75 border border-slate-200/50 px-6 py-2.5 rounded-full shadow-lg shadow-slate-200/50 backdrop-blur-md gap-4 md:gap-16">
+        {/* Main Header Row - Solid White Theme matching video background */}
+        <header className="flex flex-row items-center justify-between bg-white border border-slate-200/50 px-6 py-0.5 sm:py-1 rounded-full shadow-lg shadow-slate-200/50 gap-4 md:gap-16">
           
-          {/* Logo */}
+          {/* Animated Video Logo */}
           <a 
             href="#home" 
             onClick={(e) => handleScroll(e, "#home")} 
             className="flex items-center group cursor-pointer"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src="/images/logo_transparent.png" 
-              alt="NextHubTechnologies" 
-              className="h-16 w-auto -my-4 object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+            <div 
+              className="relative overflow-hidden flex items-center justify-center h-9 w-20 sm:h-10 sm:w-24"
+              style={{
+                background: 'transparent',
+                border: 'none',
+                boxShadow: 'none',
+              }}
+            >
+              <video
+                ref={videoRef}
+                key="/animateb.webm"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  outline: 'none',
+                  boxShadow: 'none',
+                  overflow: 'hidden',
+                  objectFit: 'contain',
+                  display: 'block',
+                }}
+                className="w-full h-full object-contain object-center scale-[1.05]"
+              >
+                <source src="/animateb.webm" type="video/webm" />
+              </video>
+            </div>
           </a>
 
           {/* Desktop Navigation Links */}
